@@ -7,7 +7,7 @@ Install Bazarr following the [instructions](../../Installation/MacOS/macos)
 From terminal:
 
 ```bash
-cd /Users/<user name>/Library/LaunchAgents
+cd ~/Library/LaunchAgents
 nano com.github.morpheus65535.bazarr.plist
 ```
 
@@ -38,8 +38,8 @@ Paste the following into the document and change the location of the logs to `/U
 ```
 
 Save the document. You should receive a notification that “_Software from ‘Ned Daily’ added items that can run in the background”. This is totally normal.
-To verify everything works, run to start Bazarr: `launchctl load /Users/<user name>/Library/LaunchAgents/com.github.morpheus65535.bazarr.plist`
-Run to stop Bazarr: `launchctl unload /Users/<user name>/Library/LaunchAgents/com.github.morpheus65535.bazarr.plist`
+To verify everything works, run to start Bazarr: `launchctl load ~/Library/LaunchAgents/com.github.morpheus65535.bazarr.plist`
+Run to stop Bazarr: `launchctl unload ~/Library/LaunchAgents/com.github.morpheus65535.bazarr.plist`
 
 No more terminal work!
 
@@ -50,7 +50,7 @@ No more terminal work!
 1. Choose type _Application_
 1. In the search bar, search for _Shell_
 1. Choose _Run Shell Script_
-1. Remove the contents of the shell script and paste: `launchctl load /Users/<user name>/Library/LaunchAgents/com.github.morpheus65535.bazarr.plist`
+1. Remove the contents of the shell script and paste: `launchctl load ~/Library/LaunchAgents/com.github.morpheus65535.bazarr.plist`
 1. Go to the _File_ menu and choose _Save_
 1. Name the file _Bazarr.app_ and save it in _Applications_
 
